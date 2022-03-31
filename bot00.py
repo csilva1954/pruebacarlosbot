@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup  #del módulo bs4, necesitamos BeautifulSoup
 import requests
 import json
+import os
 
 
 from telegram import Update
@@ -136,8 +137,9 @@ def citaCod():
 def cita(update: Update, context: CallbackContext) -> None:
     update.message.reply_text(f'{citaCod()}')
 
+# print(os.environ)
 
-updater = Updater('TELEGRAMTOKEN')
+updater = Updater(token=os.environ['BOTTOKEN'], use_context=True)
 
 updater.dispatcher.add_handler(CommandHandler('hello', hello))
 
