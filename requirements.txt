@@ -8,6 +8,8 @@ certifi==2021.10.8
 charset-normalizer==2.0.12
 click==8.1.1
 colorama==0.4.4
+distlib==0.3.4
+filelock==3.6.0
 flatbuffers==2.0
 gast==0.5.3
 google-auth==2.6.2
@@ -23,9 +25,10 @@ libclang==13.0.0
 lxml==4.8.0
 Markdown==3.3.6
 nltk==3.7
-numpy==1.22.3
 oauthlib==3.2.0
 opt-einsum==3.3.0
+pipenv==2022.3.28
+platformdirs==2.5.1
 protobuf==3.19.4
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
@@ -40,10 +43,8 @@ schedule==1.1.0
 six==1.16.0
 soupsieve==2.3.1
 telebot==0.0.4
-tensorboard==2.8.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow==2.8.0
 tensorflow-io-gcs-filesystem==0.24.0
 termcolor==1.1.0
 tf-estimator-nightly==2.8.0.dev2021122109
@@ -53,5 +54,7 @@ typing_extensions==4.1.1
 tzdata==2022.1
 tzlocal==4.1
 urllib3==1.26.9
+virtualenv==20.14.0
+virtualenv-clone==0.5.7
 Werkzeug==2.1.0
 wrapt==1.14.0
